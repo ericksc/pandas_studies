@@ -10,7 +10,7 @@ def test_join_2level_few_combinations():
     ])
 
     start = time.time()
-    idx = pd.MultiIndex.from_product([dates,strings], names=['date', 'fruit'])
+    idx = pd.MultiIndex.from_product([dates,strings], names=['date', 'words'])
     end = time.time()
     print("MultiIndex execution time:", end-start)
 
